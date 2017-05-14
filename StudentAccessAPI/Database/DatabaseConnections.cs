@@ -12,11 +12,11 @@ namespace StudentAccessAPI.Database
             switch (ClientID) {
                 case "AZURE_DATABASE":
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "tcp:mytestdatabaseserver.database.windows.net,1433";
-                builder.UserID = "chandapuredeepakiit@gmail.com@mytestdatabaseserver";
-                builder.Password = "Deepak111";
+                builder.DataSource = "your server";
+                builder.UserID = "youruserid";
+                builder.Password = "your password";
                 builder.Encrypt = true;
-                builder.InitialCatalog = "MyTestSqlDatabase";
+                builder.InitialCatalog = "your database name";
                 return builder.ConnectionString;
 
                 case "LOCAL_DATABASE":
